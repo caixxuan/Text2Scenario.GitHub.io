@@ -1,344 +1,46 @@
-<!DOCTYPE html>
-<html>
+---
+layout: page
+description: "「离开世界之前 一切都是过程」"
+---
 
-<head>
-  <meta charset="utf-8">
-
-  <title>LimSim++: A Closed-Loop Platform for Deploying Multimodal LLMs in Autonomous Driving</title>
-  <link rel="icon" type="image/x-icon" href="static/images/logo.svg">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <!-- <script defer src="static/js/fontawesome.all.min.js"></script> -->
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-  <script src="https://kit.fontawesome.com/dcd6d05807.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.0/marked.min.js"></script>
-</head>
-
-<body>
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">LimSim++: A Closed-Loop Platform for Deploying Multimodal LLMs in Autonomous Driving</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=vIU6eHYAAAAJ" target="_blank">Daocheng
-                  Fu</a><sup>1,<i class="fa-solid fa-scale-balanced fa-xs"></i></sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://github.com/wenjie-2000" target="_blank">Wenjie Lei</a><sup>2,1,<i
-                    class="fa-solid fa-scale-balanced fa-xs"></i></sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://wenlc.cn/" target="_blank">Licheng Wen</a><sup>1</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://pinlong-cai.github.io/" target="_blank">Pinlong Cai</a><sup>1,<i class="fa-regular fa-envelope fa-shake"></i></sup>,
-              </span><br>
-              <span class="author-block">
-                <a href="mailto:maosong@pjlab.org.cn" target="_blank">Song Mao</a><sup>1</sup>,
-              </span>
-              <span class="author-block">
-                <a href="mailto:doumin@pjlab.org.cn" target="_blank">Min Dou</a><sup>1</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=K0PpvLkAAAAJ" target="_blank">Botian
-                  Shi</a><sup>1,<i class="fa-regular fa-envelope fa-shake"></i></sup>,
-              </span>
-              <span>
-                <a href="https://scholar.google.com/citations?user=gFtI-8QAAAAJ" target="_blank">Yu Qiao</a><sup>1</sup>
-              </span>
-            </div>
-
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup> Shanghai Artificial Intelligence Laboratory, Shanghai, China<br><sup>2</sup> College of Control Science and Engineering, Zhejiang University
-              </span>
-              <span class="eql-cntrb">
-                <small>
-                  <br><sup><i class="fa-solid fa-scale-balanced fa-sm"></i></sup> Equal Contribution
-                  <br><sup><i class="fa-regular fa-envelope fa-shake"></i></sup> Corresponding author
-                </small>
-              </span>
-            </div>
-
-            <div class="column has-text-centered">
-              <div class="publication-links">
-
-                <!-- Github link -->
-                <span class="link-block">
-                  <a href="https://github.com/PJLab-ADG/LimSim/tree/LimSim_plus" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://browse.arxiv.org/abs/2402.01246" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>arXiv</span>
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Paper abstract -->
-  <section class="section hero is-light">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              <b>
-                This paper introduces LimSim++, an extended version of LimSim designed for the application of Multimodal Large Language Models ((M)LLMs) in autonomous driving. Acknowledging the limitations of existing simulation platforms, LimSim++ addresses the need for a long-term closed-loop infrastructure supporting continuous learning and improved generalization in autonomous driving. The platform offers extended-duration, multi-scenario simulations, providing crucial information for (M)LLM-driven vehicles. Users can engage in prompt engineering, model evaluation, and framework enhancement, making LimSim++ a versatile tool for research and practice. The contributions include the introduction of an open-source testing platform, a baseline MMLM-driven framework, and validation through quantitative experiments across diverse scenarios. LimSim++ serves as a crucial resource for advancing the integration of (M)LLMs in the development of trustworthy autonomous driving systems. The open-source resources are available at <a href="https://github.com/PJLab-ADG/LimSim/tree/LimSim_plus">Github: LimSim/LimSim_plus</a>.
-              </b>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End paper abstract -->
-
-
-  <section class="section" id="Paradigm">
-    <div class="container is-max-desktop">
-      <h2 class="title">Platform Composition</h2>
-      <div class="hero-body">
-        <center>
-          <img src="static/images/paradigm.png" width="70%">
-        </center>
-        <h2 class="subtitle has-text-justified" style="padding-top: 1rem;">
-         LimSim++ is the first closed-loop evaluation platform specifically developed for (M)LLM-driven autonomous driving.
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
         </h2>
-      </div>
-    </div>
-  </section>
-
-  <!-- Videos should be placed here. -->
-
-  <section class="section" id="Framework">
-    <div class="container is-max-desktop">
-      <h2 class="title">Framework</h2>
-      <div class="hero-body">
-        <center>
-          <img src="static/images/framework.png" width="70%">
-        </center>
-        <h2 class="subtitle has-text-justified" style="padding-top: 1rem;" style="width: 80%;">
-          LimSim++ facilitates the closed-loop simulation of (M)LLMs-driven autonomous driving, creating an environment for continuous learning. 
-        </h2>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Various Scenarios Supporting</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/sce_junctions_cutted.mp4"
-            type="video/mp4">
-          </video>
-          <br>
-          <center><h4>Intersection</h4></center>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {% if post.lang == 'en' %}
+                {{ post.content | strip_html | truncate:300 }}
+            {% else %}
+                {{ post.content | strip_html | truncate:200 }}
+            {% endif %}
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/sce_ramp_cutted.mp4"
-            type="video/mp4">
-          </video>
-          <br>
-          <center><h4>Ramp</h4></center>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/sce_roundabout_cutted.mp4"
-            type="video/mp4">
-          </video>
-          <br>
-          <center><h4>Roundabout</h4></center>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
+    </a>
+    <p class="post-meta">
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+</div>
+<hr>
+{% endfor %}
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Multimodal LLMs Supporting</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/zeroshot_gpt35.mp4"
-            type="video/mp4">
-          </video>
-          <br>
-          <center><h4>GPT-3.5</h4></center>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/zeroshot_gpt4.mp4"
-            type="video/mp4">
-          </video>
-          <br>
-          <center><h4>GPT-4</h4></center>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/zeroshot_gpt4v.mp4"
-            type="video/mp4">
-          </video>
-          <br>
-          <center><h4>GPT-4V</h4></center>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3">Enhancement with Memory</h2>
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/without_memory_collision.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        GPT-3.5 driving in zero-shot conditions: <a style="color:#FF6F61">collision</a> with a vehicle when changing lanes to the left.
-      </h2>
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/without_memory_oot.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        GPT-3.5 driving while zero-shot: <a style="color:#FF6F61">waiting too long</a>  at on-ramps.
-      </h2>
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/with_memory.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        GPT-3.5 driving with memory: safe lane changes and smooth on-ramps
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!--BibTex citation -->
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <div style="position: relative;">
-      <button id="copyButton" style="position: absolute; top: 0; right: 0;">Copy</button>
-      <pre><code id="bibtexCode">@article{fu2024limsim,
-  title={LimSim++: A Closed-Loop Platform for Deploying Multimodal LLMs in Autonomous Driving}, 
-  author={Daocheng Fu and Wenjie Lei and Licheng Wen and Pinlong Cai and Song Mao and Min Dou and Botian Shi and Yu Qiao},
-  year={2024},
-  eprint={2402.01246},
-  archivePrefix={arXiv},
-  primaryClass={cs.RO}
-}</code></pre>
-    </div>
-  </div>
-</section>
-
-<script>
-  var copyButton = document.getElementById("copyButton");
-
-  copyButton.addEventListener("click", function () {
-    var codeElement = document.getElementById("bibtexCode");
-    var textToCopy = codeElement.textContent;
-
-    var textarea = document.createElement("textarea");
-    textarea.value = textToCopy;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textarea);
-
-    copyButton.textContent = "✓ Copied!";
-
-    setTimeout(function () {
-      copyButton.textContent = "Copy";
-    }, 2000); // Reset the button text after 2 seconds (adjust as needed)
-  });
-</script>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div class="content">
-
-            <p style="text-align: center;"><i class="fa-solid fa-heart fa-beat-fade" style="color: #ff8787;"></i>
-              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
-                target="_blank">Academic Project Page Template</a> <i class="fa-solid fa-heart fa-beat-fade"
-                style="color: #ff8787;"></i>
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Statcounter tracking code -->
-
-  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-  <!-- End of Statcounter Code -->
-
-</body>
-
-</html>
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
