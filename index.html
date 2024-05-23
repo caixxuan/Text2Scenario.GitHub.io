@@ -1,281 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>AccidentGPT: Compressed Large Language Models of accident perception based on multi-vehicle view fusion</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>论文标题</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .authors {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .abstract {
+            margin-bottom: 20px;
+        }
+        .keywords {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        p {
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
 
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">AccidentGPT: Accident Analysis and Prevention from V2X Environmental Perception with Multi-modal Large Model</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://github.com/LeningWang" target="_blank">Lening Wang</a><sup></sup>,</span>
-                <span class="author-block">
-                  <a href="https://shi.buaa.edu.cn/renyilong/zh_CN/" target="_blank">Yilong Ren</a><sup>*</sup>,</span>
-                  <span class="author-block">
-  <a href="https://scholar.google.com/citations?user=d0WJTQgAAAAJ&hl=en&oi=ao" target="_blank">Han Jiang</a><sup></sup>,</span>
-        <a href="https://zhiyongcui.com" target="_blank">Zhiyong Cui</a><sup>*</sup>,</span>
-                  </span>
-      
-        <a href="https://shi.buaa.edu.cn/09558/zh_CN/index.htm" target="_blank">Haiyang Yu</a><sup>*</sup>&nbsp;&nbsp;&nbsp;
-                    <a href="https://pinlong-cai.github.io" target="_blank">Pinlong Cai</a><sup></sup>,</span>
-                  </span>
-            <a href="https://scholar.google.com/citations?user=vIU6eHYAAAAJ" target="_blank">Daocheng Fu</a><sup></sup></span>
-                  </span>
-
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">State Key Lab of Intelligent Transportation System              <br>Beihang University, Beijing              </span>&nbsp;&nbsp;&nbsp;
-     </span>
- <span class="author-block">Shanghai Artificial Intelligence Laboratory<br> Shanghai</span>
-                  </div>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://github.com/tianqi-wang1996" target="_blank">Tianqi Wang</a><sup></sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class="author-block">
-                  </span>
-              <a href="http://www.tjsafety.cn" target="_blank">Xuesong Wang</a><sup></sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class="author-block">
-                  </span>
-              <a href="https://faculty.csu.edu.cn/zhouhanchu/zh_CN/index.htm" target="_blank">Hanchu Zhou</a><sup></sup>,</span>
-                <span class="author-block">
-
-                  </span>
-              <a href="https://faculty.csu.edu.cn/huanghelai/zh_CN/index.htm" target="_blank">Helai Huang</a><sup></sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span class="author-block">
-                  </span>
-        <a href="http://www.uwstarlab.org/people.html" target="_blank">Yinhai Wang</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">The University of Hong Kong                 <br>Hong Kong             </span>&nbsp;
-     </span>
-                    <span class="author-block">   Tongji University           <br>Shanghai   </span>&nbsp;
-     </span>
-                    <span class="author-block">Central South University                   <br>   Changsha   </span>&nbsp;
-     </span>
- <span class="author-block"> University of Washington <br>Seattle</span>
-                    <span class="eql-cntrb"><small><br>First author: leningwang@buaa.edu.cn <sup>*</sup>Corresponding author: yilongren@buaa.edu.cn; zhiyongc@buaa.edu.cn; hyyu@buaa.edu.cn</small></span>
-                  </div>
- 
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/LeningWang/AccidentGPT" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://export.arxiv.org/abs/2312.13156" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
+    <h1>论文标题</h1>
+    <div class="authors">作者姓名, 作者姓名, 作者姓名</div>
+    
+    <h2>摘要</h2>
+    <div class="abstract">
+        <p>这里是论文的简短摘要。摘要应该简洁明了地概述研究的目的、方法、主要发现和结论，通常不超过200-300字。</p>
     </div>
-  </div>
-</section>
+    
+    <h2>关键词</h2>
+    <div class="keywords">关键词1, 关键词2, 关键词3</div>
+    
+    <h2>正文</h2>
+    <p>这里是论文的主体部分。详细阐述研究背景、研究方法、实验结果、数据分析、讨论以及结论等。每部分内容可以使用合适的标题（如<h3>、<h4>）进行细分。</p>
+    <!-- 在此添加更多段落或子标题内容 -->
+    
+    <h2>参考文献</h2>
+    <p>列出所有参考文献，确保遵循适当的引用格式。</p>
+    <!-- 参考文献列表 -->
 
-
-
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        AccidentGPT Video
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-Traffic accidents, being a significant contributor to both human casualties and property damage, have long been a focal point of research for many scholars in the field of traffic safety. However, previous studies, whether focusing on static environmental assessments or dynamic driving analyses, as well as pre-accident predictions or post-accident rule analyses, have typically been conducted in isolation. There has been a lack of an effective framework for developing a comprehensive understanding and application of traffic safety. To address this gap, this paper introduces AccidentGPT, a comprehensive accident analysis and prevention multi-modal large model. AccidentGPT establishes a multi-modal information interaction framework grounded in multi-sensor perception, thereby enabling a holistic approach to accident analysis and prevention in the field of traffic safety. Specifically, our capabilities can be categorized as follows: for autonomous driving vehicles, we provide comprehensive environmental perception and understanding to control the vehicle and avoid collisions. For human-driven vehicles, we offer proactive long-range safety warnings and blind-spot alerts while also providing safety driving recommendations and behavioral norms through human-machine dialogue and interaction. Additionally, for traffic police and management agencies, our framework supports intelligent and real-time analysis of traffic safety, encompassing pedestrian, vehicles, roads, and the environment through collaborative perception from multiple vehicles and road testing devices. The system is also capable of providing a thorough analysis of accident causes and liability after vehicle collisions. Our framework stands as the first large model to integrate comprehensive scene understanding into traffic safety studies.
-
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          The overall framework of AccidentGPT.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Active prompt example about AccidentGPT.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         The GPT-reasoning module.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        The V2X-perception architecture.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Paper</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@article{wang2023accidentgpt,
-  title={AccidentGPT: Accident Analysis and Prevention from V2X Environmental Perception with Multi-modal Large Model},
-  author={Wang, Lening and Ren, Yilong and Jiang, Han and Cai, Pinlong and Fu, Daocheng and Wang, Tianqi and Cui, Zhiyong and Yu, Haiyang and Wang, Xuesong and Zhou, Hanchu and Huang, Helai and Wang, Yinhai},
-  journal={arXiv preprint arXiv:2312.13156},
-  year={2023}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank"> Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
