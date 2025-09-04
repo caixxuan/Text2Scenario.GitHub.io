@@ -1,0 +1,46 @@
+weather_density:
+  cloud: [0, 0.2, 0.4, 0.6, 0.8, 1.0]
+  rainy: [0, 0.2, 0.4, 0.6, 0.8, 1.0]
+  wind: [0, 0.2, 0.4, 0.6, 0.8, 1.0]
+  sunny: [0, 0.2, 0.4, 0.6, 0.8, 1.0]
+  fog: [0, 0.2, 0.4, 0.6, 0.8, 1.0]
+  wet: [0, 0.2, 0.4, 0.6, 0.8, 1.0]
+  snowy: [0, 0.2, 0.4, 0.6, 0.8, 1.0]
+  dust_storm: [0, 0.2, 0.4, 0.6, 0.8, 1.0]
+
+time: [daytime, morning, noon, afternoon, dusk, nighttime]
+
+road_type:
+  - single-lane road
+  - two-lane road
+  - three-lane road
+  - intersection
+  - roundabout
+  - T-junction
+  - elevated road
+  - ramp merging
+  - ramp exit
+
+road_maker: [solid line, broken line]
+
+traffic-sign: [stop sign, speed limit sign]
+
+actors:
+  ego_vehicle:
+    type: [car, truck, bus]
+    lane_relation: [left lane, right lane]  # 相对于行驶方向的车道位置
+    behavior: [go forward, turn left, turn right]
+  
+  npc_actor:
+    type: [car, truck, bus, pedestrian, bike, motor]
+    initial_position_relative_to_ego: [front, behind, left, right]  # 相对于自车的初始位置
+    initial_lane_relative_to_ego: [same lane, opposite lane, left lane, right lane]  # 相对于自车的初始车道
+    oracle_of_npc_actor:  # 可组合成连贯行为序列
+      - accelerate
+      - decelerate
+      - constant speed
+      - stop
+      - change lane to left
+      - change lane to right
+      - turn left
+      - turn right

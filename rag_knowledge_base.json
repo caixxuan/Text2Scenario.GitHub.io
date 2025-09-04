@@ -1,0 +1,19 @@
+{"id": "weather_density_cloud", "category": "weather_density", "field": "cloud", "values": [0, 0.2, 0.4, 0.6, 0.8, 1.0], "description": "cloud密度，取值范围0到1，0代表无，1代表最强。"}
+{"id": "weather_density_rainy", "category": "weather_density", "field": "rainy", "values": [0, 0.2, 0.4, 0.6, 0.8, 1.0], "description": "rainy密度，取值范围0到1，0代表无，1代表最强。"}
+{"id": "weather_density_wind", "category": "weather_density", "field": "wind", "values": [0, 0.2, 0.4, 0.6, 0.8, 1.0], "description": "wind密度，取值范围0到1，0代表无，1代表最强。"}
+{"id": "weather_density_sunny", "category": "weather_density", "field": "sunny", "values": [0, 0.2, 0.4, 0.6, 0.8, 1.0], "description": "sunny密度，取值范围0到1，0代表无，1代表最强。"}
+{"id": "weather_density_fog", "category": "weather_density", "field": "fog", "values": [0, 0.2, 0.4, 0.6, 0.8, 1.0], "description": "fog密度，取值范围0到1，0代表无，1代表最强。"}
+{"id": "weather_density_wet", "category": "weather_density", "field": "wet", "values": [0, 0.2, 0.4, 0.6, 0.8, 1.0], "description": "wet密度，取值范围0到1，0代表无，1代表最强。"}
+{"id": "weather_density_snowy", "category": "weather_density", "field": "snowy", "values": [0, 0.2, 0.4, 0.6, 0.8, 1.0], "description": "snowy密度，取值范围0到1，0代表无，1代表最强。"}
+{"id": "weather_density_dust_storm", "category": "weather_density", "field": "dust_storm", "values": [0, 0.2, 0.4, 0.6, 0.8, 1.0], "description": "dust_storm密度，取值范围0到1，0代表无，1代表最强。"}
+{"id": "time", "category": "time", "values": ["daytime", "morning", "noon", "afternoon", "dusk", "nighttime"], "description": "一天中的时间段，包括：白天、早晨、中午、下午、黄昏、夜晚。"}
+{"id": "road_type", "category": "road_type", "values": ["single-lane road", "two-lane road", "three-lane road", "intersection", "roundabout", "T-junction", "elevated road", "ramp merging", "ramp exit"], "description": "道路类型。"}
+{"id": "road_maker", "category": "road_maker", "values": ["solid line", "broken line"], "description": "道路标线类型。"}
+{"id": "traffic_sign", "category": "traffic_sign", "values": ["stop sign", "speed limit sign"], "description": "交通标志类型。"}
+{"id": "actors_ego_vehicle_type", "category": "actors", "actor": "ego_vehicle", "field": "type", "values": ["car", "truck", "bus"], "description": "ego_vehicle的type选项。"}
+{"id": "actors_ego_vehicle_lane_relation", "category": "actors", "actor": "ego_vehicle", "field": "lane_relation", "values": ["left lane", "right lane"], "description": "ego_vehicle的lane_relation选项。"}
+{"id": "actors_ego_vehicle_behavior", "category": "actors", "actor": "ego_vehicle", "field": "behavior", "values": ["go forward", "turn left", "turn right"], "description": "ego_vehicle的behavior选项。"}
+{"id": "actors_npc_actor_type", "category": "actors", "actor": "npc_actor", "field": "type", "values": ["car", "truck", "bus", "pedestrian", "bike", "motor"], "description": "npc_actor的type选项。"}
+{"id": "actors_npc_actor_initial_position_relative_to_ego", "category": "actors", "actor": "npc_actor", "field": "initial_position_relative_to_ego", "values": ["front", "behind", "left", "right"], "description": "npc_actor的initial_position_relative_to_ego选项。"}
+{"id": "actors_npc_actor_initial_lane_relative_to_ego", "category": "actors", "actor": "npc_actor", "field": "initial_lane_relative_to_ego", "values": ["same lane", "opposite lane", "left lane", "right lane"], "description": "npc_actor的initial_lane_relative_to_ego选项。"}
+{"id": "actors_npc_actor_oracle_of_npc_actor", "category": "actors", "actor": "npc_actor", "field": "oracle_of_npc_actor", "values": ["accelerate", "decelerate", "constant speed", "stop", "change lane to left", "change lane to right", "turn left", "turn right"], "description": "npc_actor的oracle_of_npc_actor选项。"}
