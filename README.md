@@ -82,12 +82,24 @@ python scenario_generator.py
 - Interfuser: https://github.com/opendilab/InterFuser (0.9.10 is needed)
 
 ## Results Visualization
-<p align="center">
-<img src="static/videos/5.gif" width="24%">Intersection
-<img src="static/videos/8.gif" width="24%">RampMerging
-<img src="static/videos/11.gif" width="24%">FireTruck
-<img src="static/videos/17.gif" width="24%">CarFollowing
-</p>
+<div align="center">
+  <div style="display: inline-block; text-align: center; width: 24%; vertical-align: top;">
+    <img src="static/videos/5.gif" style="width: 100%;">
+    <div>Intersection</div>
+  </div>
+  <div style="display: inline-block; text-align: center; width: 24%; vertical-align: top;">
+    <img src="static/videos/8.gif" style="width: 100%;">
+    <div>RampMerging</div>
+  </div>
+  <div style="display: inline-block; text-align: center; width: 24%; vertical-align: top;">
+    <img src="static/videos/11.gif" style="width: 100%;">
+    <div>FireTruck</div>
+  </div>
+  <div style="display: inline-block; text-align: center; width: 24%; vertical-align: top;">
+    <img src="static/videos/17.gif" style="width: 100%;">
+    <div>CarFollowing</div>
+  </div>
+</div>
 
 ## Citation
 ```
