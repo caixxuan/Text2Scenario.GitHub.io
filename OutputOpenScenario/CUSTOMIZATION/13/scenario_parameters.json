@@ -1,0 +1,39 @@
+{
+    "weather_density": {
+        "sunny": 0.5
+    },
+    "time": [
+        "daytime"
+    ],
+    "road_type": [
+        "two-lane road"
+    ],
+
+    "actors": {
+        "ego_vehicle": {
+            "type": [
+                "car"
+            ],
+            "lane_relation": [
+                "right lane"
+            ],
+            "behavior": [
+                "go forward"
+            ]
+        },
+        "npc_actor": {
+            "type": [
+                "car"
+            ],
+            "initial_position_relative_to_ego": [
+                "left"
+            ],
+            "initial_lane_relative_to_ego": [
+                "left lane"
+            ],
+            "oracle_of_npc_actor": [
+                "constant speed","constant speed","change lane to right","constant speed","constant speed"
+            ]
+        }
+    }
+}

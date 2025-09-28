@@ -1,0 +1,11 @@
+{"weather_density": {"sunny": 0.5}, 
+"time": ["daytime"], 
+"road_type": ["intersection"], 
+"actors": {"ego_vehicle": 
+{"type": ["car"], 
+"lane_relation": ["left lane"], 
+"behavior": ["turn left"]}, 
+"npc_actor": {"type": ["bike"], 
+"initial_position_relative_to_ego": ["front"],
+ "initial_lane_relative_to_ego": ["cross sidewalk"], 
+ "oracle_of_npc_actor": ["accelerate","constant speed"]}}}

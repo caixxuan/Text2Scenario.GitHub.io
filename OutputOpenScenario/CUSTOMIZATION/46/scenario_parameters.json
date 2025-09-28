@@ -1,0 +1,39 @@
+{
+    "weather_density": {
+        "fog": 1.0
+    },
+    "time": [
+        "daytime"
+    ],
+    "road_type": [
+        "roundabout"
+    ],
+
+    "actors": {
+        "ego_vehicle": {
+            "type": [
+                "car"
+            ],
+            "lane_relation": [
+                "right lane"
+            ],
+            "behavior": [
+                "turn left"
+            ]
+        },
+        "npc_actor": {
+            "type": [
+                "car"
+            ],
+            "initial_position_relative_to_ego": [
+                "behind"
+            ],
+            "initial_lane_relative_to_ego": [
+                "left lane"
+            ],
+            "oracle_of_npc_actor": [
+                "constant speed","constant speed","constant speed","constant speed"
+            ]
+        }
+    }
+}

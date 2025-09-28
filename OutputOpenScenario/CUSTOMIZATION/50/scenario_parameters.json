@@ -1,0 +1,41 @@
+{
+    "weather_density": {
+        "fog": 0.2
+    },
+    "time": [
+        "daytime"
+    ],
+    "road_type": [
+        "two-lane road"
+    ],
+    "actors": {
+        "ego_vehicle": {
+            "type": [
+                "car"
+            ],
+            "lane_relation": [
+                "left lane"
+            ],
+            "behavior": [
+                "go forward"
+            ]
+        },
+        "npc_actor": {
+            "type": [
+                "pedestrain"
+            ],
+            "initial_position_relative_to_ego": [
+                "front"
+            ],
+            "initial_lane_relative_to_ego": [
+                "right lane with static traffic"
+            ],
+            "oracle_of_npc_actor": [
+                "accelerate",
+                "constant speed",
+                "constant speed",
+                "constant speed"
+            ]
+        }
+    }
+}

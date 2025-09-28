@@ -1,0 +1,38 @@
+{
+    "weather_density": {
+        "rainy": 0.5
+    },
+    "time": [
+        "daytime"
+    ],
+    "road_type": [
+        "ramp exit"
+    ],
+    "actors": {
+        "ego_vehicle": {
+            "type": [
+                "car"
+            ],
+            "lane_relation": [
+                "right lane"
+            ],
+            "behavior": [
+                "turn right"
+            ]
+        },
+        "npc_actor": {
+            "type": [
+                "car"
+            ],
+            "initial_position_relative_to_ego": [
+                "front"
+            ],
+            "initial_lane_relative_to_ego": [
+                "same lane"
+            ],
+            "oracle_of_npc_actor": [
+                "change lane to right","decelerate","constant speed","constant speed","constant speed"
+            ]
+        }
+    }
+}

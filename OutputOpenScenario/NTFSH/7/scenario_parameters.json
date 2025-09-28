@@ -1,0 +1,11 @@
+{"weather_density": {"sunny": 0.5}, 
+"time": ["daytime"], 
+"road_type": ["ramp merging"], 
+"actors": {"ego_vehicle": 
+{"type": ["car"], 
+"lane_relation": ["left lane"], 
+"behavior": ["go forward"]}, 
+"npc_actor": {"type": ["car"], 
+"initial_position_relative_to_ego": ["behind"], 
+"initial_lane_relative_to_ego": ["left lane"], 
+"oracle_of_npc_actor": ["accelerate","constant speed"]}}}

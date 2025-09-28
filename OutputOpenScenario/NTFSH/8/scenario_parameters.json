@@ -1,0 +1,11 @@
+{"weather_density": {"sunny": 0.5}, 
+"time": ["daytime"], 
+"road_type": ["elevated road"], 
+"actors": {"ego_vehicle": 
+{"type": ["car"], 
+"lane_relation": ["right lane"], 
+"behavior": ["go forward"]}, 
+"npc_actor": {"type": ["car"], 
+"initial_position_relative_to_ego": ["right"], 
+"initial_lane_relative_to_ego": ["right lane"], 
+"oracle_of_npc_actor": ["accelerate","constant speed","change lane to left","accelerate"]}}}

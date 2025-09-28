@@ -1,0 +1,39 @@
+{
+    "weather_density": {
+        "rain": 0.3
+    },
+    "time": [
+        "daytime"
+    ],
+    "road_type": [
+        "single-lane road"
+    ],
+
+    "actors": {
+        "ego_vehicle": {
+            "type": [
+                "car"
+            ],
+            "lane_relation": [
+                "right lane"
+            ],
+            "behavior": [
+                "go forward"
+            ]
+        },
+        "npc_actor": {
+            "type": [
+                "car"
+            ],
+            "initial_position_relative_to_ego": [
+                "front"
+            ],
+            "initial_lane_relative_to_ego": [
+                "sidewalk"
+            ],
+            "oracle_of_npc_actor": [
+                "stop"
+            ]
+        }
+    }
+}

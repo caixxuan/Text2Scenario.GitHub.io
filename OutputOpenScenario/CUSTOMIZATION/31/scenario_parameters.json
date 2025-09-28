@@ -1,0 +1,38 @@
+{
+    "weather_density": {
+        "sunny": 0.8
+    },
+    "time": [
+        "daytime"
+    ],
+    "road_type": [
+        "intersection"
+    ],
+    "actors": {
+        "ego_vehicle": {
+            "type": [
+                "car"
+            ],
+            "lane_relation": [
+                "right lane"
+            ],
+            "behavior": [
+                "go forward"
+            ]
+        },
+        "npc_actor": {
+            "type": [
+                "pedestrain"
+            ],
+            "initial_position_relative_to_ego": [
+                "front"
+            ],
+            "initial_lane_relative_to_ego": [
+                "cross sidewalk"
+            ],
+            "oracle_of_npc_actor": [
+                "accelerate","constant speed","constant speed","constant speed","constant speed"
+            ]
+        }
+    }
+}

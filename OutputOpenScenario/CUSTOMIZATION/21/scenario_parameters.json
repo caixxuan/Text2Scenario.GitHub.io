@@ -1,0 +1,39 @@
+{
+    "weather_density": {
+        "windy": 0.5
+    },
+    "time": [
+        "daytime"
+    ],
+    "road_type": [
+        "railroad crossing"
+    ],
+
+    "actors": {
+        "ego_vehicle": {
+            "type": [
+                "car"
+            ],
+            "lane_relation": [
+                "right lane"
+            ],
+            "behavior": [
+                "go forward"
+            ]
+        },
+        "npc_actor": {
+            "type": [
+                "car"
+            ],
+            "initial_position_relative_to_ego": [
+                "behind"
+            ],
+            "initial_lane_relative_to_ego": [
+                "left lane"
+            ],
+            "oracle_of_npc_actor": [
+                "constant speed","constant speed","constant speed"
+            ]
+        }
+    }
+}

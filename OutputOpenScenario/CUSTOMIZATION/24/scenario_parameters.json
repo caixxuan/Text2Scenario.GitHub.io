@@ -1,0 +1,38 @@
+{
+    "weather_density": {
+        "windy": 0.5
+    },
+    "time": [
+        "daytime"
+    ],
+    "road_type": [
+        "single-lane road"
+    ],
+    "actors": {
+        "ego_vehicle": {
+            "type": [
+                "car"
+            ],
+            "lane_relation": [
+                "left lane"
+            ],
+            "behavior": [
+                "go forward"
+            ]
+        },
+        "npc_actor": {
+            "type": [
+                "bike"
+            ],
+            "initial_position_relative_to_ego": [
+                "front"
+            ],
+            "initial_lane_relative_to_ego": [
+                "sidewalk"
+            ],
+            "oracle_of_npc_actor": [
+                "accelerate","constant speed","constant speed","constant speed","constant speed"
+            ]
+        }
+    }
+}

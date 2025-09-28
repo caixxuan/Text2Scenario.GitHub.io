@@ -1,5 +1,10 @@
 # Text2Scenario: Text-Driven Scenario Generation for Autonomous Driving
 
+<p align="center">
+<img src="static/images/overview.jpg" width="80%">
+</p>
+
+
 ## Installation Steps
 
 ### Step 1: Create and Activate Conda Environment
@@ -69,6 +74,28 @@ python scenario_generator.py
 - Reference: [Scenario Runner Documentation](https://scenario-runner.readthedocs.io/en/latest/)
 
 ### Step 6: Check Acknowledgement to Build carla-X Joint Simulation Framework
+
+
+## Results Visualization
+<p align="center">
+<img src="static/videos/5.gif" width="24%">
+<img src="static/videos/8.gif" width="24%">
+<img src="static/videos/11.gif" width="24%">
+<img src="static/videos/17.gif" width="24%">
+</p>
+
+## Citation
+```
+@misc{cai2025text2scenariotextdrivenscenariogeneration,
+      title={Text2Scenario: Text-Driven Scenario Generation for Autonomous Driving Test}, 
+      author={Xuan Cai and Xuesong Bai and Zhiyong Cui and Danmu Xie and Daocheng Fu and Haiyang Yu and Yilong Ren},
+      year={2025},
+      eprint={2503.02911},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2503.02911}, 
+}
+```
 
 ## Acknowledgement
 - DORA: https://github.com/dora-rs
