@@ -83,10 +83,10 @@ python scenario_generator.py
 
 ## Results Visualization
 <p align="center">
-<img src="static/videos/5.gif" width="24%">
-<img src="static/videos/8.gif" width="24%">
-<img src="static/videos/11.gif" width="24%">
-<img src="static/videos/17.gif" width="24%">
+<img src="static/videos/5.gif" width="24%">Intersection
+<img src="static/videos/8.gif" width="24%">RampMerging
+<img src="static/videos/11.gif" width="24%">FireTruck
+<img src="static/videos/17.gif" width="24%">CarFollowing
 </p>
 
 ## Citation
@@ -101,4 +101,3 @@ python scenario_generator.py
       url={https://arxiv.org/abs/2503.02911}, 
 }
 ```
-
