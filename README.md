@@ -75,6 +75,11 @@ python scenario_generator.py
 
 ### Step 6: Check Acknowledgement to Build carla-X Joint Simulation Framework
 
+## Acknowledgement
+- DORA: https://github.com/dora-rs
+- Apollo: https://github.com/guardstrikelab/carla_apollo_bridge
+- Autoware: https://github.com/autowarefoundation/autoware
+- Interfuser: https://github.com/opendilab/InterFuser (0.9.10 is needed)
 
 ## Results Visualization
 <p align="center">
@@ -97,8 +102,3 @@ python scenario_generator.py
 }
 ```
 
-## Acknowledgement
-- DORA: https://github.com/dora-rs
-- Apollo: https://github.com/guardstrikelab/carla_apollo_bridge
-- Autoware: https://github.com/autowarefoundation/autoware
-- Interfuser: https://github.com/opendilab/InterFuser (0.9.10 is needed)
